@@ -1,8 +1,7 @@
 [Service]
-PrivateTmp=true
 Type=simple
-StandardOutput=journal
-StandardError=journal
+User=pi
+WorkingDirectory=/home/pi
 ExecStart=/usr/local/bin/ngrok start --all
 Restart=always
 
