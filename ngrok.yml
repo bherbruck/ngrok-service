@@ -1,4 +1,4 @@
-authtoken: abcd
+authtoken: 
 
 tunnels:
   ssh:
