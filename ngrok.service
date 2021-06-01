@@ -1,0 +1,14 @@
+# Ubuntu: /lib/systemd/system/ngrok.service
+# Config (env.conf) placed in ngrok.service.d will be read automatically
+# YMMV on other distributions
+
+[Service]
+PrivateTmp=true
+Type=simple
+StandardOutput=journal
+StandardError=journal
+ExecStart=/usr/local/bin/ngrok start --all
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
