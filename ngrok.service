@@ -1,7 +1,3 @@
-# Ubuntu: /lib/systemd/system/ngrok.service
-# Config (env.conf) placed in ngrok.service.d will be read automatically
-# YMMV on other distributions
-
 [Service]
 PrivateTmp=true
 Type=simple
