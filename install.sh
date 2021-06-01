@@ -4,7 +4,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip -P ./
 unzip ./ngrok-stable-linux-arm.zip
 rm ./ngrok-stable-linux-arm.zip
 
-mkdir /home/$SUDO_USER/.ngrok2
+mkdir /home/$SUDO_USER/.ngrok2/
 cp ./ngrok.yml /home/$SUDO_USER/.ngrok2/ngrok.yml
 
 sudo mv ./ngrok /usr/local/bin/
