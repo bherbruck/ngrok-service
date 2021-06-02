@@ -1,12 +1,12 @@
 #!/bin/bash
 
 if [ -z "$1" ]; then
-  echo "No authtoken supplied. Get yours at https://dashboard.ngrok.com/get-started/your-authtoken."
+  echo "no authtoken supplied, get yours at https://dashboard.ngrok.com/get-started/your-authtoken"
   exit 1
 fi
 
 if [ "$EUID" -ne 0 ]; then
-  echo "Must run as root"
+  echo "must run as root"
   exit 1
 fi
 
