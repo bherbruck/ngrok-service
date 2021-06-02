@@ -23,3 +23,9 @@ cd tabcmd-wrapper
 ```sh
 sudo bash setup.sh <your-authtoken>
 ```
+
+## ⚠ Warning
+
+This might overwrite your ngrok.yml
+
+Currently only downloads the 32-bit ARM version of ngrok
