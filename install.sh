@@ -1,7 +1,9 @@
 #!/bin/bash
 
 if [ -z "$1" ]; then
-  echo "no authtoken supplied, get yours at https://dashboard.ngrok.com/get-started/your-authtoken"
+  echo "no authtoken supplied"
+  echo "get yours at https://dashboard.ngrok.com/get-started/your-authtoken"
+  echo "sudo bash install.sh <your-authtoken>"
   exit 1
 fi
 
