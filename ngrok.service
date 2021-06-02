@@ -1,9 +1,0 @@
-[Service]
-Type=simple
-User=pi
-WorkingDirectory=/home/pi
-ExecStart=/usr/local/bin/ngrok start --all
-Restart=always
-
-[Install]
-WantedBy=multi-user.target
