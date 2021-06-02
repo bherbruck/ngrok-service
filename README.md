@@ -18,7 +18,7 @@ git clone https://github.com/bherbruck/tabcmd-wrapper
 cd tabcmd-wrapper
 ```
 
-4. Run the setup script
+4. Run the setup script with your copied auth token
 
 ```sh
 sudo bash setup.sh <your-authtoken>
