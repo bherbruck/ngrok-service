@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -z "$1" ]; then
-  echo "No authtoken supplied"
+  echo "No authtoken supplied. Get yours at https://dashboard.ngrok.com/get-started/your-authtoken."
   exit 1
 fi
 
@@ -17,7 +17,7 @@ rm ./ngrok-stable-linux-arm.zip
 mv ./ngrok /usr/local/bin/
 
 mkdir -p /home/$SUDO_USER/.ngrok2/
-cat >/home/$SUDO_USER/.ngrok2/ngrok.yml <<EOF
+cat > /home/$SUDO_USER/.ngrok2/ngrok.yml <<EOF
 authtoken: $1
 
 tunnels:
@@ -26,7 +26,7 @@ tunnels:
     addr: 22
 EOF
 
-cat >/etc/systemd/system/ngrok.service <<EOF
+cat > /etc/systemd/system/ngrok.service <<EOF
 [Service]
 Type=simple
 User=$SUDO_USER
