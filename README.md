@@ -9,13 +9,13 @@ Easily install ngrok as a service on a Raspberry Pi!
 2. Clone the repo
 
 ```sh
-git clone https://github.com/bherbruck/tabcmd-wrapper
+git clone https://github.com/bherbruck/ngrok-service
 ```
 
 3. `cd` into the repo
 
 ```sh
-cd tabcmd-wrapper
+cd ngrok-service
 ```
 
 4. Run the setup script with your copied auth token
